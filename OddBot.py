@@ -11,7 +11,7 @@ async def on_ready():
 
 @bot.command()
 async def load(ctx, extension):
-    if ctx.author.id == '866285734808780812':
+    if ctx.author.id == 866285734808780812:
         bot.load_extension(f'cogs.{extension}')
         await ctx.send(f"Loaded Cog: {extension}")
     else:
@@ -19,15 +19,15 @@ async def load(ctx, extension):
 
 @bot.command()
 async def unload(ctx, extension):
-    if ctx.author.id == '866285734808780812':
-        bot.unload_extension(f'cogs.extension')
+    if ctx.author.id == 866285734808780812:
+        bot.unload_extension(f'cogs.{extension}')
         await ctx.send(f'Unloaded Cog: {extension}')
     else:
         await ctx.send('Only the owner of the bot can run this command.')
 
 @bot.command()
 async def reload(ctx, extension):
-    if ctx.author.id == '866285734808780812':
+    if ctx.author.id == 866285734808780812:
         bot.reload_extension(f'cogs.{extension}')
         await ctx.send(f'Reloaded Cog: {extension}')
     else:
