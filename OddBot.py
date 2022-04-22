@@ -40,4 +40,5 @@ for filename in os.listdir('./cogs'):
     else:
         print("Failed to load __pycache__")
 
+
 bot.run(config.token)

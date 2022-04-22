@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cogs"
   ],
-  "SelectedNode": "\\C:\\Users\\imbor\\Source\\OddBot",
+  "SelectedNode": "\\cogs\\ban.py",
   "PreviewInSolutionExplorer": false
 }
